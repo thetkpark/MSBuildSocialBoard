@@ -1,22 +1,25 @@
-const fs = require( "fs" );
-const path = require( "path" );
-const md = require( "markdown-it" )({
-    linkify: true,
-    typographer: true
-}).enable([ 'link' ]);
+const fs = require('fs')
+const path = require('path')
+const md = require('markdown-it')({
+	linkify: true,
+	typographer: true,
+}).enable(['link'])
 
-console.log( "Scanning Social Shareboard entries..." );
-let shareboardFull = fs.readdirSync( path.join( __dirname, "notes" ) )
-    .filter( file => path.extname( file ).toLowerCase() === ".md" )
-    .filter( file => file !== "sample.md" )
-    .map( file => fs.readFileSync( path.join( __dirname, "notes", file ) ) )
-    .join( "\n---\n" );
+const port = process.env.PORT || 8000
+
+console.log('Scanning Social Shareboard entries...')
+let shareboardFull = fs
+	.readdirSync(path.join(__dirname, 'notes'))
+	.filter(file => path.extname(file).toLowerCase() === '.md')
+	.filter(file => file !== 'sample.md')
+	.map(file => fs.readFileSync(path.join(__dirname, 'notes', file)))
+	.join('\n---\n')
 
 // Save the Markdown
-fs.writeFileSync( "SHAREBOARD.md", shareboardFull );
+fs.writeFileSync('SHAREBOARD.md', shareboardFull)
 
 // Save the HTML
-let shareboard = md.render( fs.readFileSync( "SHAREBOARD.md" ).toString() );
+let shareboard = md.render(fs.readFileSync('SHAREBOARD.md').toString())
 let page = `<!doctype html>
     <html lang="en">
     <head>
@@ -36,7 +39,7 @@ let page = `<!doctype html>
         </div>
         <script src="https://cdn.jsdelivr.net/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     </body>
-</html>`;
-fs.writeFileSync( "index.html", page );
+</html>`
+fs.writeFileSync('index.html', page)
 
-const Web = require( "webwebweb" ).Run( 8000 );
+const Web = require('webwebweb').Run(port)
