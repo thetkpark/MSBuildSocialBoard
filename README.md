@@ -7,7 +7,7 @@ Social Shareboard for Microsoft Build 2020 Student Zone!
 
 1. Fork this repository to your GitHub account with the button at the top-right
 
-2. Create a new Markdown file in the `notes` folder inside **Social2020** and name it something unique like **ilovestudentzone2020.md** and fill it out similar to other examples in the notes folder. You can copy the content in sample.md file and modify it as you want.
+2. Create a new Markdown file in the `notes` folder and name it something unique like **ilovebuild2020.md** and fill it out similar to other examples in the notes folder. You can copy the content in sample.md file and modify it as you want.
 
 3. Commit and Push the changes to GitHub
 
