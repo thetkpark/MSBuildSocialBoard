@@ -1,3 +1,0 @@
-# Sethanant P
-
-> Hello World
