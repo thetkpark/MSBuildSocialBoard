@@ -17,7 +17,11 @@ Bases on the Social Shareboard for Microsoft Build 2020 Student Zone. This is a 
 5. Your note will be reviewed and approved by the admins!
 
 # Resources
-gitignore.io
-Microosft Learn: Introduction to version control with Git
-Microsoft Learn: Automate your workflow with GitHub Actions
-Microsoft Build 2020: Introduction to GitHub for Student Developers
+[gitignore.io](https://www.toptal.com/developers/gitignore)
+
+[Microosft Learn: Introduction to version control with Git](https://docs.microsoft.com/en-us/learn/paths/intro-to-vc-git/)
+
+[Microsoft Learn: Automate your workflow with GitHub Actions](https://docs.microsoft.com/en-us/learn/paths/automate-workflow-github-actions/)
+
+[Microsoft Build 2020: Introduction to GitHub for Student Developers](https://mybuild.microsoft.com/sessions/d29ddc03-a873-41df-bb4e-5c0af5bf7b5c?source=sessions)
+
